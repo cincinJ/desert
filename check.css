@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.logo h1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    overflow: hidden;
+    width: 210px;
+    height: 30px;
+    white-space: nowrap;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header a{
+    display: block;
+    padding:30px;
+    text-decoration: none;
+    color: #3F5D45;
+}
+.header a:hover{
+    background: orange;
+}
+.header .list-bar{
+    display:none;
+}
+@media screen and (max-width:375px){
+    .header li{
+        display:none;
+      }
+      .cart.cart{
+        display: block;
+      }
+      .logo h1{
+        background-image: url(logotype-lg-dark.svg);
+        background-repeat: no-repeat;
+        width: 114px;
+        height: 18px;
+        margin: 0;
+      }
+      .header{
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 32%;
+      }
+      .header .list-bar{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+
+}
+.shoppinglist img{
+    width: 120px;
+    height: 80px;
+}
+/*  */
+.content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.data{
+    width: 460px;
+    background: #3F5D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 40px;
+    /* box-sizing: border-box; */
+}
+.data h3{
+    color: #EAF0ED;
+    font-size: 20px;
+}
+.name{
+    display: flex;
+    margin-bottom: 16px;
+}
+.name input,.address select{
+    width: 186px;
+    height: 56px;
+    background: #EAF0ED;
+    border: none;
+}
+.phone{
+    margin-bottom: 16px;
+}
+.phone input,.road{
+    width: 380px;
+    height: 56px;
+    border: none;
+    background: #EAF0ED;
+}
+.next{
+    text-decoration: none;
+    width: 460px;
+    height: 65px;
+    background: #FFE180;
+    color: #3F5D45;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deliver{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.import,.lise_name{
+    width: 300px;
+    height: 65px;
+    background: #EAF0ED;
+    color: #8DA291;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+    margin-left: 20px;
+}
+.total{
+    margin-bottom: 20px;
+}
+.total ul{
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    
+}
+.total li{
+    display: flex;
+    justify-content: space-between;
+    color: #8DA291;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.total_price span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.shoppinglist ul{
+    margin: 16px;
+}
+.shoppinglist li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.tp{
+    background: #3F5D45;
+    width: 100%;
+    height: 116px;
+    margin-top: 60px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  @media screen and (max-width:375px){
+    .tp{
+      flex-direction: column;
+      margin: 0;
+      height: auto;
+      padding: 20px;
+    }
+    .top-right{
+      margin-bottom: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    }
+  }
+  .input-mail{
+    width: 316px;
+    height: 56px;
+    background: #EAF0ED;
+    border: none;
+  }
+  .tp button{
+    width: 64px;
+    height: 58px;
+    border: none;
+    background: #FFE180;
+    margin-left: -8px;
+  }
+  .top-right{
+      display: flex;
+      align-items: center;
+  }
+  .top-right h3{
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+  }
+ 
+  form{
+    position: relative;
+  }
+  @media screen and (max-width:375px){
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .tp button{
+      height: 56px;
+    }
+  }
+  .mailbox{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 24px;
+    color: #3F5D45;
+  }
+  .fb img{
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+  }
+  .day img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .bt{
+      background:#EAF0ED;
+  }
+  .btt{
+    display: flex;
+    justify-content: space-around;
+  }
+  .mini-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mini-logo ul{
+    color: #3F5D45;
+    line-height: 26px;
+  }
+  .bttt{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .alert{
+    margin-top: 16px;
+    color: #3F5D45;
+  }
+  @media screen and (max-width:375px){
+    .bttt{
+      display: block;
+    }
+    .day{
+      display:none;
+    }
+    .mini-logo{
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .mini-logo img{
+      margin-bottom: 38px;
+    }
+    .mini-logo ul{
+      margin-bottom: 30px;
+    }
+    .bt{
+      padding-left: 30px;
+      padding-top: 38px;
+    }
+    .bttt{
+      padding-left: 0;
+    }
+    .fb{
+      margin-bottom: 30px;
+    }
+    .mailbox{
+      left: 30px;
+    }
+  }
+.delete{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:375px){
+  .delete{
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

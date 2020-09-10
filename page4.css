@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------------- */
+
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+.wrap{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+.header .list-bar{
+    display:none;
+}
+
+.header h1 a{
+    display: block;
+    background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    width: 220px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    margin-top: 30px;
+    margin-bottom: 66px;
+}
+.header ul{
+    display:flex;
+}
+.header li a{
+    text-decoration: none;
+    color: #3F5D45;
+    display:block;
+    padding: 40px;
+}
+.header li a:hover{
+    color:white;
+    background: #3F5D45;
+}
+@media screen and (max-width:375px){
+    .header{
+        justify-content: center;
+        position: relative;    align-items: center;
+    }
+    .header li{
+        display:none;
+    }
+    .header li a{
+        padding: 34px;
+        padding-left: 40px;
+    }
+    .header h1 a{
+        margin: 0;
+        background-image: url(logotype-lg-dark.svg);
+        width: 114px;
+        height: 18px;
+        margin-left: 41%;
+    }
+    .header .list-bar{
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 8%;
+        font-size: 22px;
+        color: #3F5D45;
+    }
+    .cart.cart{
+        display: block;
+        padding-left:75%;
+        
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:375px){
+    /* .wrap {
+        max-width: 375px;
+    } */
+    .content{
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    
+    .bside h3{
+        display:none;
+    }
+    .contact.contact{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 20px 26px;
+        width: 100%;
+        
+    }
+    
+    
+}
+.signin-top{
+    background: #3F5D45;
+    width: 390px;
+    height: 315px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.remember{
+   padding-left: 15px;
+   color:#EAF0ED; 
+   margin-bottom: 20px; 
+}
+.remember-check{
+    width: 16px;
+    height: 16px;
+    background-color: #EAF0ED;
+}
+.signin-top h2{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+    
+}
+@media screen and (max-width:375px){
+    .signin-top{
+        max-width: 100%;
+        height: 100%;
+    }
+    .signin-top h2{
+        margin-top: 30px;
+        margin-bottom: 150px;
+        
+    }
+}
+.mail,.pw{
+    background: #EAF0ED;
+    width: 330px;
+    height: 56px;
+    margin-left: 20px;
+    border:none;
+    padding-left: 30px;
+}
+.first{
+    position: relative;
+    margin-bottom:16px;
+}
+.first i{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color:#3F5D45;
+
+}
+@media screen and (max-width:375px){
+    .one{
+        margin-top:35px ;
+    }
+}
+.sign-bt{
+    background: #FFE180;
+}
+.sign-bt h3{
+    color:#3F5D45;
+    text-align: center;
+    font-size: 24px;
+    width: 390px;
+    height: 65px;
+    padding-top: 20px;
+}
+.sign-bt a:hover{
+    background:pink;
+}
+.sign-bt a{
+    text-decoration: none;
+    display: block;
+}
+.contact {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .google,.contact .yahoo{
+    width: 30%;
+}
+.contact .fb{
+    width: 40%;
+}
+@media screen and (max-width:375px){
+    /* .contact img{
+        width: 100%;
+    } */
+    .sign-bt h3 {
+        width: 100%;
+    }
+}
+.contact a{
+    /* display: block;
+    text-align: center;
+    padding: 10px;
+    background: #FFFFFF;
+    margin: 0 30px;
+    margin-bottom: 16px; */
+    width: 330px;
+    height: 56px;
+    background-color: white;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:375px){
+    .contact a{
+        width: 105px;
+        height: 56px;
+        padding: 15px;
+        margin-top: 30px;
+        margin: 30px 1px 0 1px;
+    }
+    .contact .fb{
+        width: 80%;
+    }
+    .contact .google{
+        width: 70%;
+    }
+    .contact .yahoo{
+        width: 70%;
+    }
+
+}
+.contact a:hover{
+    background:green;
+}
+.bside{
+
+    background:#EAF0ED;
+    width: 390px;
+    height: 350px;
+}
+.bside h3{
+    color:#8DA291;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 36px;
+}
+@media screen and (max-width:375px){
+    .aside {
+        max-width: 100%;
+    }
+    .bside{
+        max-width: 100%;
+        width: 100%;
+        height: 116px;
+        position: absolute;
+        top: 20%;
+    }
+}
+
+.top{
+    background: #3F5D45;
+    width: 100%;
+    height: 116px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-right h3{
+    display:inline;
+    font-size: 24px;
+    color:#EAF0ED;
+    margin-left: 20px;  
+}
+.top-right{
+    display: flex;
+    align-items: center;
+    /* margin-top: 25px; */
+}
+@media screen and (max-width:375px){
+    .top{
+        flex-direction: column  ;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .top-right{
+        padding: 20px 0;
+    }
+    
+}
+.mailinput{
+    width: 316px;
+    height: 56px;
+    margin: 30px 0;
+}
+.bottom{
+    background: #EAF0ED;
+    color: #3F5D45;
+}
+.ftmail .ftmail1{
+    position: relative;
+}
+.ftmail{
+    display: flex;
+    align-items: center;
+}
+.xinxin{
+    position: absolute;
+    font-size: 24px;
+    color:#3F5D45;
+    top: -25px;
+    bottom: 0;
+    margin-top: 45px;
+    padding-left: 15px;
+}
+.form-control{
+    /* margin-top: 30px; */
+    padding-left: 4em;
+    width: 380px;
+    height: 56px;
+    background: #EAF0ED;
+    border: none;
+}
+@media screen and (max-width:375px){
+    .form-control{
+        max-width: 100%;
+        width: auto;
+        padding-left: 8em;
+    }
+    .day{
+        display:none;
+    }
+}
+.mail-btn{
+    width: 64px;
+    height: 56px;
+    margin-left: -8px;
+    background:#FFE180;
+    border:none;
+}
+.footer-left{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.footer-left ul{
+    line-height: 22px;
+}
+.footer-left img{
+    margin-top: 38px;
+}
+.adress img{
+    margin-bottom: 100px;
+}
+.adress a{
+    text-decoration: none;
+    color:#3F5D45 ;
+}
+
+.footerbt img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.footerbt{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    margin-left: 22px;
+    line-height: 37px;
+}
+@media screen and (max-width:375px){
+    .footer-left{
+        justify-content: start;
+    }
+    .footerbt{
+        margin: 0;
+        flex-direction: column;
+    }
+    .bottom{
+        padding-left: 30px;
+    }
+}

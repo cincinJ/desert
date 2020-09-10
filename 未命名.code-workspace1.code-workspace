@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Applications/程式"
+		},
+		{
+			"path": "../程式"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "甜點"
+	}
+}

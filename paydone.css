@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+
+h3{
+  font-size: 24px;
+  color:white;
+  display: inline;
+}
+@media screen and (max-width:375px){
+  h3{
+    margin-left: 30px;
+  }
+}
+.wrap{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.logo h1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    overflow: hidden;
+    width: 210px;
+    height: 30px;
+    white-space: nowrap;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+} 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header a{
+    display: block;
+    padding:30px;
+    text-decoration: none;
+    color: #3F5D45;
+}
+.header a:hover{
+    background: orange;
+}
+.header .list-bar{
+  display: none;
+  color: #3F5D45;
+}
+@media screen and (max-width:375px){
+  .header li{
+    display:none;
+  }
+  .cart.cart{
+    display: block;
+  }
+  .logo h1{
+    background-image: url(logotype-lg-dark.svg);
+    background-repeat: no-repeat;
+    width: 114px;
+    height: 18px;
+    margin: 0;
+  }
+  .header{
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32%;
+  }
+  .header .list-bar{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+.banner{
+    background-image: url(https://bit.ly/2P7GhNd);
+    width: 100%;
+    height: 496px;
+    background-repeat: no-repeat;
+    background-size: cover;/*可以讓圖片滿版*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-position: center, center;
+}
+.banner a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #3F5D45;
+    background: #FFE180;
+    padding: 17px 102px;
+    margin-top: 51px;
+}
+.banner a:hover{
+    background: pink;
+}
+@media screen and (max-width:375px){
+  .banner{
+    justify-content: space-between;
+}
+  .banner a{
+  width: 100%;
+  text-align: center;
+}
+  
+  }
+.nike{
+    position: relative;
+    top: -5%;
+    left: 5%;
+    color: #3F5D45;
+  }
+  .a{
+    position: absolute;
+    width: 105px;
+    height: 2px;
+    background:#3F5D45;
+  }
+  .nike .first{
+    margin-right: 100px;
+  }
+  .nike .first3{
+    margin-right: 100px;
+  }
+  .nike .left-border{
+    left: 15px;
+    top: 10px;
+  }
+  .nike .right-border{
+    top: 10px;
+    left: 130px;
+  }
+  @media screen and (max-width:375px){
+    
+    .nike{
+      top: 30%;
+      left: 0;
+    }
+    .nike .first3{
+      margin: 0;
+    }
+  }
+  .tp{
+    background: #3F5D45;
+    width: 100%;
+    height: 116px;
+    margin-top: 60px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  @media screen and (max-width:375px){
+    .tp{
+      flex-direction: column;
+      margin: 0;
+      height: auto;
+      padding: 20px;
+    }
+    .top-right{
+      margin-bottom: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    }
+  }
+  .input-mail{
+    width: 316px;
+    height: 56px;
+    background: #EAF0ED;
+    border: none;
+  }
+  .tp button{
+    width: 64px;
+    height: 58px;
+    border: none;
+    background: #FFE180;
+    margin-left: -8px;
+  }
+  form{
+    position: relative;
+  }
+  @media screen and (max-width:375px){
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .tp button{
+      height: 56px;
+    }
+  }
+  .mailbox{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 24px;
+    color: #3F5D45;
+  }
+  .fb img{
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+  }
+  .day img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .bt{
+    background: #EAF0ED;
+    padding-bottom: 5px;
+  }
+  .btt{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .mini-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mini-logo ul{
+    color: #3F5D45;
+    line-height: 26px;
+  }
+  .bttt{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .alert{
+    margin-top: 16px;
+    color: #3F5D45;
+  }
+  @media screen and (max-width:375px){
+    .bttt{
+      display: block;
+    }
+    .day{
+      display:none;
+    }
+    .mini-logo{
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .mini-logo img{
+      margin-bottom: 38px;
+    }
+    .mini-logo ul{
+      margin-bottom: 30px;
+    }
+    .bt{
+      padding-left: 30px;
+      padding-top: 38px;
+    }
+    .bttt{
+      padding-left: 0;
+    }
+    .fb{
+      margin-bottom: 30px;
+    }
+    .mailbox{
+      left: 30px;
+    }
+  }
